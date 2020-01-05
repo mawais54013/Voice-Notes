@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B57CBE5B23C19AF500AC85A7 /* NoteSelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57CBE5A23C19AF500AC85A7 /* NoteSelectRow.swift */; };
 		B5E0EF4823C18FBB00EB0611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0EF4723C18FBB00EB0611 /* AppDelegate.swift */; };
 		B5E0EF4A23C18FBB00EB0611 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0EF4923C18FBB00EB0611 /* SceneDelegate.swift */; };
 		B5E0EF4C23C18FBB00EB0611 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0EF4B23C18FBB00EB0611 /* ViewController.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B57CBE5A23C19AF500AC85A7 /* NoteSelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteSelectRow.swift; path = "Voice Notes WatchKit App/NoteSelectRow.swift"; sourceTree = SOURCE_ROOT; };
 		B5E0EF4423C18FBB00EB0611 /* Voice Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E0EF4723C18FBB00EB0611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E0EF4923C18FBB00EB0611 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		B5E0EF6B23C18FC400EB0611 /* Voice Notes WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B57CBE5A23C19AF500AC85A7 /* NoteSelectRow.swift */,
 				B5E0EF6C23C18FC400EB0611 /* InterfaceController.swift */,
 				B5E0EF6E23C18FC400EB0611 /* ExtensionDelegate.swift */,
 				B5E0EF7023C18FC500EB0611 /* Assets.xcassets */,
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57CBE5B23C19AF500AC85A7 /* NoteSelectRow.swift in Sources */,
 				B5E0EF6F23C18FC400EB0611 /* ExtensionDelegate.swift in Sources */,
 				B5E0EF6D23C18FC400EB0611 /* InterfaceController.swift in Sources */,
 			);

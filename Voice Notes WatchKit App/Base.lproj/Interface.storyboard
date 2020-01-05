@@ -9,7 +9,33 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Voice_Notes_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Voice_Notes_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="0ku-KA-Utp">
+                            <items>
+                                <tableRow identifier="Row" id="CaT-3O-kGQ" customClass="NoteSelectRow" customModule="Voice_Notes_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="HaR-51-uxB">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="d9B-eb-y9B"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="d9B-eb-y9B" id="V2d-VK-hFV"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Add New Note" id="iQU-0Y-GfT">
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addNewNote" destination="AgC-eL-Hgc" id="UG3-5L-9A6"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="Table" destination="0ku-KA-Utp" id="HzF-7K-A9Z"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="34" y="31"/>
         </scene>
