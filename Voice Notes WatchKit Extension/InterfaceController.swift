@@ -13,11 +13,23 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet var Table: WKInterfaceTable!
+    var notes = [String]()
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        Table.setNumberOfRows(notes.count, withRowType: "Row")
+        
+        for rowIndex in 0 ..< notes.count {
+            set(row: rowIndex, to: notes[rowIndex])
+        }
+    }
+    
+    func set(row rowIndex: Int, to text: String)
+    {
+        guard let row = Table.rowController(at: rowIndex) as? NoteSelectRow else { return }
+        row.textLabel.setText(text)
     }
     
     override func willActivate() {
@@ -31,7 +43,17 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func addNewNote() {
-        
+        presentTextInputController(withSuggestions: nil, allowedInputMode: .plain) { [unowned self]
+            result in
+            
+            guard let result = result?.first as? String else { return }
+            
+            self.Table.insertRows(at: IndexSet(integer: self.notes.count), withRowType: "Row")
+            
+            self.set(row: self.notes.count, to: result)
+            
+            self.notes.append(result)
+        }
     }
     
 }
