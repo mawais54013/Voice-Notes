@@ -9,6 +9,7 @@
 import WatchKit
 
 class NoteSelectRow: NSObject {
+//    textlabel area 
 
     @IBOutlet var textLabel: WKInterfaceLabel!
 }
