@@ -11,7 +11,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Voice_Notes_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <table alignment="left" id="0ku-KA-Utp">
+                        <table alignment="left" pagingScroll="YES" id="0ku-KA-Utp">
                             <items>
                                 <tableRow identifier="Row" id="CaT-3O-kGQ" customClass="NoteSelectRow" customModule="Voice_Notes_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="HaR-51-uxB">
@@ -21,6 +21,7 @@
                                     </group>
                                     <connections>
                                         <outlet property="textLabel" destination="d9B-eb-y9B" id="V2d-VK-hFV"/>
+                                        <segue destination="kLq-5W-TTc" kind="push" id="C9r-fR-NE8"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -39,13 +40,16 @@
             </objects>
             <point key="canvasLocation" x="34" y="31"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Detail Interface Controller-->
         <scene sceneID="OUp-Gq-mNa">
             <objects>
-                <controller id="kLq-5W-TTc">
+                <controller id="kLq-5W-TTc" customClass="DetailInterfaceController" customModule="Voice_Notes_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Label" numberOfLines="0" id="v6x-Gj-wX0"/>
                     </items>
+                    <connections>
+                        <outlet property="textLabel" destination="v6x-Gj-wX0" id="4Fm-kO-QBd"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="342" y="31"/>
